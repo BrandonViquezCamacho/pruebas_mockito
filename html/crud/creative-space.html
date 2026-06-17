@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Espacios Creativos</title>
+    <link rel="stylesheet" href="../crud/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CRUD Espacios Creativos</h1>
+
+    <div class="form-container">
+
+        <h2>Formulario Espacio</h2>
+
+        <form id="spaceForm">
+
+            <label>ID</label>
+            <input type="number" id="id">
+
+            <label>Nombre</label>
+            <input type="text" id="name" required>
+
+            <label>Ubicación</label>
+            <input type="text" id="location" required>
+
+            <label>Tipo</label>
+            <input type="text" id="type" required>
+
+            <label>Precio</label>
+            <input type="number" step="0.01" id="price" required>
+
+            <button type="submit">
+                Guardar
+            </button>
+
+        </form>
+
+        <p id="mensaje"></p>
+
+    </div>
+
+    <div class="table-container">
+
+        <h2>Lista de Espacios</h2>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+
+            <tbody id="spaceTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="crud-space.js"></script>
+
+</body>
+</html>
