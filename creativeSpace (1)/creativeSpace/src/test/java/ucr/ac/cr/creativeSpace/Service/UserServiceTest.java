@@ -66,7 +66,7 @@ public class UserServiceTest {
 
         UserDTO result = userService.findByIDUser(1);
 
-        assertNotNull(result);
+        assertNull(result);
         assertEquals(1, result.getId());
         assertEquals("Brandon", result.getName());
 
